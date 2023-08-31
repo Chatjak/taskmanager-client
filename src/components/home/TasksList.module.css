@@ -1,0 +1,61 @@
+.list {
+    padding: 1rem;
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    border-radius: 14px;
+}
+
+.options {
+    display: flex;
+}
+
+.delete,
+.checkbox,
+.completed {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: orangered;
+    color: black;
+}
+
+.checkbox {
+    background-color: lightgray;
+}
+
+.completed {
+    background-color: green;
+    color: white;
+}
+
+.fontcompleted {
+    text-decoration: line-through;
+}
+
+
+
+.delete:hover,
+.checkbox:hover {
+    font-size: 1.5rem;
+    transition: font-size 0.2s ease-in;
+}
+
+.completed:hover {
+    cursor: default;
+}
+
+.list:hover {
+    background-color: #e1e1e1;
+}

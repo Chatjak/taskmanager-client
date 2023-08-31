@@ -1,0 +1,10 @@
+@media screen and (max-width:600px) {
+    html{
+        font-size: 60%;
+    }
+}
+@media screen and (max-width:900px) {
+    html{
+        font-size: 70%;
+    }
+}

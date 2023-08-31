@@ -1,0 +1,104 @@
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.login_box {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    top: 20%;
+    width: 480px;
+    left: 35%;
+    height: 60%;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.exit {
+    display: flex;
+    justify-content: end;
+}
+
+.exit i {
+    cursor: pointer;
+}
+
+.form {
+    justify-self: center;
+    margin-top: 2rem;
+    align-self: center;
+    /* border: 1px solid red; */
+    width: 70%;
+}
+
+.login_box_input {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_box_input input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.login_box_input button {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.login_box_input button:hover {
+    opacity: 0.9;
+}
+
+.login_box a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+@media (max-width: 698px) {
+    .backdrop {
+        display: none;
+    }
+
+    .login_box {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        padding: 0.5rem;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .exit {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) and (min-width:699px) {
+    .login_box {
+        left: calc((100vw - 480px) / 2);
+        top: calc((100vh * 20%) / 2)
+    }
+}
